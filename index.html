@@ -117,7 +117,10 @@
 			var hora = agora.getHours();
 			if (hora >= 20 || hora < 6) {
 				document.body.style.backgroundColor = '#101010';
-				document.querySelectorAll("svg").style.background = "#222 !important";
+				const svgList = document.querySelectorAll("aside svg");
+				for (let i = 0; i < svgList.length; i++) {
+					svgList[i].style.backgroundColor = "#222";
+				}
 			}
 		});
 	</script>
