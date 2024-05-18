@@ -1,0 +1,105 @@
+/* general */
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: rgb(0, 22, 40);
+    background-image: url('dot.svg');
+    background-attachment: fixed;
+}
+
+
+main {
+    padding: 20px;
+}
+
+
+header {
+    background-color: rgb(18, 43, 60);
+    max-width: 768px;
+    height: 64px;
+    border-radius: 64px;
+    padding: 0px 20px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    color: rgb(175, 185, 190);
+}
+.header-logo {
+    height: 42px;
+    width: 42px;
+    color: rgb(175, 185, 190);
+}
+.header-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+.header-link a {
+    text-decoration: none;
+    color: rgb(175, 185, 190);
+}
+.header-link a:hover {
+    color: rgb(0, 100, 180);
+}
+.header-action {
+    height: 42px;
+    width: 42px;
+    color: rgb(175, 185, 190);
+    cursor: pointer;
+    transition: all 250ms;
+}
+.header-action:hover {
+    color: rgb(0, 100, 180);
+}
+
+
+section {
+    margin-top: 80px;
+}
+section h1 {
+    background: linear-gradient(45deg, rgb(116, 132, 146), rgb(254, 254, 254), rgb(116, 132, 146));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 5vw;
+    width: 960px;
+    max-width: 100%;
+    margin: auto;
+    text-align: center;
+}
+section p {
+    color: rgb(195, 198, 193);
+    font-size: 1rem;
+    font-weight: 300;
+    max-width: 960px;
+    margin: auto;
+    text-align: center;
+}
+
+
+footer {
+    max-width: 768px;
+    height: 64px;
+    padding: 0px 20px;
+    margin: 80px auto 0 auto;
+    text-align: center;
+    color: rgb(0, 100, 180);
+    letter-spacing: 0.2rem;
+    font-size: 0.75rem;
+}
+
+
+@media (max-width: 768px) {
+    section h1 {
+        font-size: 10vw;
+    }
+}
