@@ -9,7 +9,7 @@
 
 body {
     background-color: rgb(0, 22, 40);
-    background-image: url('dot.svg');
+    background-image: url('dot.svg?v=5');
     background-attachment: fixed;
 }
 
@@ -34,8 +34,23 @@ header {
 }
 .header-logo {
     height: 42px;
-    width: 42px;
     color: rgb(175, 185, 190);
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    gap: 5px;
+}
+.header-logo svg {
+    height: 42px;
+    width: 42px;
+}
+.header-logo div {
+    font-size: 1rem;
+    line-height: 1.2;
+}
+.header-logo div span {
+    letter-spacing: 0.25rem;
 }
 .header-link {
     display: flex;
@@ -51,19 +66,30 @@ header {
     color: rgb(0, 100, 180);
 }
 .header-action {
+    color: rgb(175, 185, 190);
+    transition: all 250ms;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    gap: 5px;
+}
+.header-action svg {
     height: 42px;
     width: 42px;
-    color: rgb(175, 185, 190);
     cursor: pointer;
+    border: 2px solid rgb(175, 185, 190);
+    border-radius: 50%;
     transition: all 250ms;
 }
-.header-action:hover {
+.header-action svg:hover {
     color: rgb(0, 100, 180);
+    border-color: rgb(0, 100, 180);
 }
 
 
 section {
-    margin-top: 80px;
+    margin-top: 60px;
 }
 section h1 {
     background: linear-gradient(45deg, rgb(116, 132, 146), rgb(254, 254, 254), rgb(116, 132, 146));
